@@ -3,7 +3,7 @@ import time
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
-def control_button_shopping_cart(browser):
+def test_control_button_shopping_cart(browser):
     browser.get(link)
     time.sleep(3)
     button = browser.find_elements(By.XPATH, "//button[@class='btn btn-lg btn-primary btn-add-to-basket']")
